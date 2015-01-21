@@ -17,6 +17,13 @@ The nextImageForStack is required and the delegate must provide the images as re
 
 The stack can be instantiated using storyboard, or the set up methods in -(void) awakeFromNib can be shifted to the -(id) init method for programmatically setting the stack up. 
 
+The IDImageStack methods enable the user interactions outside of the class. These methods include:
+
+
+
+
+
+
 I'd also like to thank [Nimrod Gutman](http://guti.in/articles/creating-tinder-like-animations/) for some of the initial code that i modified to create the stack. This link will also provide a useful resource for any further modifications on the classes.
 
 Contributions and/or modifications are welcome!

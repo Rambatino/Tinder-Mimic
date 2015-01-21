@@ -368,4 +368,18 @@ CGFloat pictureOffset = 5.f;
     }
 }
 
+// accessing the current images in order
+- (NSMutableArray*) currentStackValues {
+    
+    __block  NSMutableArray * new = [NSMutableArray new];
+    
+    [_imageStack enumerateObjectsUsingBlock:^(IDImageView * obj, NSUInteger idx, BOOL *stop) {
+       
+        [new addObject:obj.image];
+        
+    }];
+    
+    return new;
+}
+
 @end

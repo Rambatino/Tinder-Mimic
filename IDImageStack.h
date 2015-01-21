@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, IDImageStackSwipeDirection) {
 
 @interface IDImageStack : UIView
 
-@property (nonatomic) NSArray * currentStackValues;
+@property (nonatomic, readonly) NSMutableArray * currentStackValues;
 
 - (void) rightShiftTopStackWithCompletion:(void (^) ()) completion;
 
