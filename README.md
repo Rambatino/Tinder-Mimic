@@ -19,9 +19,11 @@ The stack can be instantiated using storyboard, or the set up methods in -(void)
 
 The IDImageStack methods enable the user interactions outside of the class. These methods include:
 
+	- (void) rightShiftTopStackWithCompletion:(void (^) ()) completion;
 
+	- (void) leftShiftTopStackWithCompletion:(void (^) ()) completion;
 
-
+and our pretty self explanatory.
 
 
 I'd also like to thank [Nimrod Gutman](http://guti.in/articles/creating-tinder-like-animations/) for some of the initial code that i modified to create the stack. This link will also provide a useful resource for any further modifications on the classes.
